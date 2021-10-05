@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+main{
+    --main-padding: 0.5rem;
+
+    margin: 0 auto;
+    width: calc(70% - var(--main-padding));
+    padding: 0 var(--main-padding);
+    background-color: white;
+}
+
+main>*{
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    text-align: center;
+}
