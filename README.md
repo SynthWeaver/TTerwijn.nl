@@ -2,7 +2,7 @@
 Bla bla bla small intro one liner
 
 ## Demo:
-test.tterwijn.nl
+http://test.tterwijn.nl
 
 ![logo](/docs/img/logo.png)
 
