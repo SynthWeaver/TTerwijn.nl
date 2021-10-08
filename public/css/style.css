@@ -7,6 +7,10 @@
     display: none;
 }
 
+html{
+    overflow: scroll; /* Show scrollbars */
+}
+
 main{
     --main-padding: 0.5rem;
 
