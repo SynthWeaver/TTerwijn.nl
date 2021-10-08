@@ -11,6 +11,22 @@ Route::add('/', function () {
     include 'private/classes/Wrapper.php';
 });
 
+Route::add('/curriculum-vitae', function () {
+    $title = "Curriculum vitae";
+    $description = "Curriculum vitae";
+
+    $main = phpInclude("private/pages/curriculumVitae.php");
+    include 'private/classes/Wrapper.php';
+});
+
+Route::add('/portfolio', function () {
+    $title = "Portfolio";
+    $description = "Portfolio";
+
+    $main = phpInclude("private/pages/Portfolio.php");
+    include 'private/classes/Wrapper.php';
+});
+
 Route::add('/shop', function () {
     $title = "Shop";
     $description = "Shop";

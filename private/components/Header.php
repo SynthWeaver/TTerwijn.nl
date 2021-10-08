@@ -1,12 +1,11 @@
 <header>
     <section>
-        <a href="/shop" title="Open the shop page"><p>Shop</p></a>
-        <a href="/test" title="Test pagina" class="hidden"><p>Test</p></a>
-        <a href="/test" title="Test pagina" class="hidden"><p>Test</p></a>
-        <a href="/" title="Back to the home page" class="hidden"><p>Home</p></a>
+        <a href="/" title="Open the home page"><p>Home</p></a>
+        <a href="/curriculum-vitae" title="Open my CV"><p>CV</p></a>
+        <a href="/portfolio" title="Open my portfolio"><p>Portfolio</p></a>
     </section>
     <section>
-        <a href="/" title="Back to the home page">TTerwijn.nl</a>
+        <a href="/" title="Open the home page">TTerwijn.nl</a>
     </section>
 
     <!-- Todo add breadcrubs -->
