@@ -2,7 +2,7 @@
     <h1>Curriculum vitae</h1> 
     <table>
         <tr>
-            <th colspan="2">Persoonsgegevens</th>
+            <th colspan="2"><h2>Persoonsgegevens</h2></th>
             <th rowspan="9"><img src="public/img/tim.jpg"></th>
         </tr>
         <tr>
@@ -40,7 +40,7 @@
         <!-- Todo: openklikbare th's -->
         
         <tr>
-            <th colspan="3">Opleidingen</th>
+            <th colspan="3"><h2>Opleidingen</h2></th>
         </tr>
         <tr>
             <td>2017-heden</td>
@@ -66,7 +66,7 @@
         <!-- Minoren -->
 
         <tr>
-            <th colspan="3">Minoren</th>
+            <th colspan="3"><h2>Minoren</h2></th>
         </tr>
         <tr>
             <td>2021</td>
@@ -84,7 +84,7 @@
         <!-- Stages -->
         
         <tr>
-            <th colspan="3">Stages</th>
+            <th colspan="3"><h2>Stages</h2></th>
         </tr>
         <tr>
             <td>2020</td>
@@ -110,7 +110,7 @@
         <!-- Werkervaring -->
         
         <tr>
-            <th colspan="3">Werkervaring</th>
+            <th colspan="3"><h2>Werkervaring</h2></th>
         </tr>
         <tr>
             <td>2019-2020</td>
@@ -137,7 +137,7 @@
         <!-- Todo: sorteren -->
         
         <tr>
-            <th colspan="3">Vaardigheden</th>
+            <th colspan="3"><h2>Vaardigheden</h2></th>
         </tr>
         <tr><td colspan="3">GIT</td></tr>
         <tr><td colspan="3">Scrum</td></tr>
@@ -160,7 +160,7 @@
         <!-- Talen -->
         
         <tr>
-            <th colspan="3">Talen</th>
+            <th colspan="3"><h2>Talen</h2></th>
         </tr>
         <tr>
             <td>Nederlands</td>
@@ -174,7 +174,7 @@
          <!-- Hobby’s -->
         
          <tr>
-            <th colspan="3">Hobby’s</th>
+            <th colspan="3"><h2>Hobby’s</h2></th>
         </tr>
         <tr><td>Gamen</td></tr>
         <tr><td>Computers</td></tr>
@@ -212,6 +212,10 @@
 
     .cv-page>table th{
         padding: 1rem 0;
+    }
+
+    .cv-page>table th>h2{
+        font-size: 1rem;
     }
 
     .cv-page>table>tr :first-child>th{
