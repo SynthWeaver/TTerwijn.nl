@@ -15,7 +15,7 @@ Route::add('/curriculum-vitae', function () {
     $title = "Curriculum vitae";
     $description = "Curriculum vitae";
 
-    $main = phpInclude("private/pages/curriculumVitae.php");
+    $main = phpInclude("private/pages/CurriculumVitae.php");
     include 'private/classes/Wrapper.php';
 });
 

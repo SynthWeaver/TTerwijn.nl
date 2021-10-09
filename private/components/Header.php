@@ -1,8 +1,8 @@
 <header>
     <section>
-        <a href="/" title="Open the home page"><p>Home</p></a>
-        <a href="/curriculum-vitae" title="Open my CV"><p>CV</p></a>
-        <a href="/portfolio" title="Open my portfolio"><p>Portfolio</p></a>
+        <a href="/" title="Open the home page">Home</a>
+        <a href="/curriculum-vitae" title="Open my CV">CV</a>
+        <a href="/portfolio" title="Open my portfolio">Portfolio</a>
     </section>
     <section>
         <a href="/" title="Open the home page">TTerwijn.nl</a>
@@ -39,6 +39,7 @@
         display: grid;
         align-items: center;
         height: 3rem;
+        text-align: center;
     }
 
     /* Menu buttons */
@@ -51,10 +52,6 @@
         border-right: 1px solid white;
         width: 93px;
     }
-
-    header>section:first-child>a>p{
-        text-align: center;
-    }   
 
     header>section:first-child>a:first-child{
         border-left: 1px solid white;
@@ -98,13 +95,9 @@
             justify-self: center;
         }
 
-        header>section:first-child>a{
-            border-top: 1px solid white;
-        }
-
         header>section:first-child>a:nth-child(1),
         header>section:first-child>a:nth-child(2) {
-            border-top-width: 0;
+            border-bottom: 1px solid white;
         }
 
         header>section:first-child>a:nth-child(3){
