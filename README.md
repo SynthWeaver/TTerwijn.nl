@@ -1,4 +1,4 @@
 # My personal website WIP
 
 Link
-http://test.tterwijn.nl
+http://tterwijn.nl
