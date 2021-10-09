@@ -7,7 +7,7 @@
         //Get jobs from database 
         include "private/classes/Job.php";
         
-        $sql = "SELECT * FROM jobs";
+        $sql = "SELECT * FROM jobs ORDER BY id DESC";
         $result = $conn->query($sql);
         
         while($row = $result->fetch_assoc()) {

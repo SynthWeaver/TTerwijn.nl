@@ -193,9 +193,9 @@
 </script>
 
 <style>
-    .cv-page{
+    /* .cv-page{
 
-    }
+    } */
 
     .cv-page>table{
         text-align: left;
