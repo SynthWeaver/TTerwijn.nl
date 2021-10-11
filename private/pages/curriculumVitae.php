@@ -3,31 +3,19 @@
     <table>
         <tr>
             <th colspan="2"><h2>Persoonsgegevens</h2></th>
-            <th rowspan="9"><img src="public/img/tim.jpg"></th>
+            <td rowspan="7"><img src="public/img/tim.jpg"></td>
         </tr>
         <tr>
             <td>Naam</td>
             <td>Tim Terwijn</td>
         </tr>
         <tr>
-            <td>Adres</td>
-            <td>Pieterman 12</td>
-        </tr>
-        <tr>
-            <td>Postcode</td>
-            <td>1131 PW Volendam</td>
-        </tr>
-        <tr>
-            <td>Telefoon</td>
-            <td>06-34386374</td>
+            <td>Woonplaats</td>
+            <td>Volendam</td>
         </tr>
         <tr>
             <td>Geboortedatum</td>
             <td>07-09-1995</td>
-        </tr>
-        <tr>
-            <td>E-mail</td>
-            <td>tim@terwijn.nl</td>
         </tr>
         <tr>
             <td colspan="2"><a href="https://linkedin.com/in/tim-t-37611ab6/">LinkedIn</a></td>
@@ -208,6 +196,7 @@
         height: 160px;
         width: 120px;
         border-radius: 11%;
+        float: right;
     }
 
     .cv-page>table th{

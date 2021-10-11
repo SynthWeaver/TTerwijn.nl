@@ -1,14 +1,16 @@
+<?php $HOME_TITLE = "Open de homepagina van Tim Terwijn"; ?>
+
 <header>
     <section>
-        <a href="/" title="Open the home page">Home</a>
-        <a href="/curriculum-vitae" title="Open my CV">CV</a>
-        <a href="/portfolio" title="Open my portfolio">Portfolio</a>
+        <a href="/" title="<?= $HOME_TITLE ?>">Home</a>
+        <a href="/curriculum-vitae" title="Open de CV pagina van Tim Terwijn">CV</a>
+        <a href="/portfolio" title="Open de portfolio pagina van Tim Terwijn">Portfolio</a>
     </section>
     <section>
-        <a href="/" title="Open the home page">TTerwijn.nl</a>
+        <a href="/" title="<?= $HOME_TITLE ?>">Tim Terwijn</a>
     </section>
 
-    <!-- Todo add breadcrubs -->
+    <!-- Todo add breadcrubs or colours to menu -->
 </header>
 
 <script>

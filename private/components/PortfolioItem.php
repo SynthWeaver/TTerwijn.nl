@@ -1,7 +1,7 @@
 <?php 
-    $GITHUB_TITLE = "View this Github project in a new tab."; 
-    $DEMO_TITLE = "View this project in a new tab."; 
-    $IMAGE_TITLE = "View this image better in a new tab."; 
+    $GITHUB_TITLE = "Opent deze github repository in een nieuw tabblad."; 
+    $DEMO_TITLE = "Opent de demo van dit project in een nieuw tabblad."; 
+    $IMAGE_TITLE = "Opent de foto van dit project in new tabblad voor betere weergave."; 
 ?>
 
 <section class="portfolio-item-component">
@@ -11,7 +11,7 @@
     </a>
     <p>
         <?php
-            echo $job->getDescription();
+            echo $job->getDescription() . "&nbsp";
         
             if($job->getGithubLink()){
                 echo sprintf('<a href="%s" title="%s" target="_blank" 
@@ -25,7 +25,7 @@
 
             if($job->getImageLink()){
                 echo sprintf('<a href="public/img/%s" title="%s" target="_blank" 
-                >Image</a>', $job->getImageLink(), $IMAGE_TITLE);
+                >Foto</a>&nbsp', $job->getImageLink(), $IMAGE_TITLE);
             }
         ?>
     </p>
