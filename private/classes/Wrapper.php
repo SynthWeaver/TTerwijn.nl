@@ -3,7 +3,7 @@
 include 'private/libraries/Minifier.php';
 
 $css = file_get_contents('public/css/style.css');
-$header = file_get_contents('private/components/Header.php');
+$header = phpInclude('private/components/Header.php');
 
 $html = "
     <!DOCTYPE html>

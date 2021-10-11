@@ -5,27 +5,27 @@
 ?>
 
 <section class="portfolio-item-component">
-    <h2><?=$job->getName()?></h2>
+    <h2><?= $job->getName() ?></h2>
     <a href="public/img/<?= $job->getImageLink() ?>" title="<?= $IMAGE_TITLE ?>" target="_blank" >
-        <img src="public/img/<?= $job->getSmallImageLink() ?>">
+        <img src="public/img/<?= $job->getSmallImageLink() ?>" alt="Een foto van het project <?= $job->getName() ?>">
     </a>
     <p>
         <?php
-            echo $job->getDescription() . "&nbsp";
+            echo $job->getDescription() . "&nbsp;";
         
             if($job->getGithubLink()){
                 echo sprintf('<a href="%s" title="%s" target="_blank" 
-                >Github</a>&nbsp', $job->getGithubLink(), $GITHUB_TITLE);
+                >Github</a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
             }
 
             if($job->getDemoLink()){
                 echo sprintf('<a href="%s" title="%s" target="_blank" 
-                >Demo</a>&nbsp', $job->getDemoLink(), $DEMO_TITLE);
+                >Demo</a>&nbsp;', $job->getDemoLink(), $DEMO_TITLE);
             }
 
             if($job->getImageLink()){
                 echo sprintf('<a href="public/img/%s" title="%s" target="_blank" 
-                >Foto</a>&nbsp', $job->getImageLink(), $IMAGE_TITLE);
+                >Foto</a>&nbsp;', $job->getImageLink(), $IMAGE_TITLE);
             }
         ?>
     </p>

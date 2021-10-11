@@ -21,7 +21,7 @@ Route::add('/curriculum-vitae', function () {
 
 Route::add('/portfolio', function () {
     $title = "Portfolio van Tim Terwijn";
-    $description = "Dit is de Portfolio pagina van Tim Terwijn. Hier kun je meer informatie over mijn recente projecten vinden. Je kunt gebruik maken van de knoppen: 'Github', 'Demo' en 'Foto' om meer te weten te komen over dat specifieke project.";
+    $description = "Dit is de Portfolio pagina van Tim Terwijn. Hier kun je meer informatie over mijn recente projecten vinden. Je kunt gebruik maken van de knoppen: Github, Demo en Foto om meer te weten te komen over dat specifieke project.";
 
     $main = phpInclude("private/pages/Portfolio.php");
     include 'private/classes/Wrapper.php';

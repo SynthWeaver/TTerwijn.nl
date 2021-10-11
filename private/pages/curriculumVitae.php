@@ -2,8 +2,8 @@
     <h1>Curriculum vitae</h1> 
     <table>
         <tr>
-            <th colspan="2"><h2>Persoonsgegevens</h2></th>
-            <td rowspan="7"><img src="public/img/tim.jpg"></td>
+            <th colspan="2">Persoonsgegevens</th>
+            <td rowspan="7"><img src="public/img/tim.jpg" alt="Een foto van Tim Terwijn op zijn zeilboot"></td>
         </tr>
         <tr>
             <td>Naam</td>
@@ -18,17 +18,18 @@
             <td>07-09-1995</td>
         </tr>
         <tr>
-            <td colspan="2"><a href="https://linkedin.com/in/tim-t-37611ab6/">LinkedIn</a></td>
+            <td colspan="2"><a href="https://linkedin.com/in/tim-t-37611ab6/" title="Open mijn LinkedIn pagina in een nieuw tabblad." target="_blank" >LinkedIn</a></td>
         </tr>
         <tr>
-            <td colspan="2"><a href="https://github.com/TimTerwijn">Github</a></td>
+            <td colspan="2"><a href="https://github.com/TimTerwijn" title="Open mijn Github pagina in een nieuw tabblad." target="_blank" >Github</a>
+        </td>
         </tr>
 
         <!-- Opleidingen -->
         <!-- Todo: openklikbare th's -->
         
         <tr>
-            <th colspan="3"><h2>Opleidingen</h2></th>
+            <th colspan="2">Opleidingen</th>
         </tr>
         <tr>
             <td>2017-heden</td>
@@ -54,7 +55,7 @@
         <!-- Minoren -->
 
         <tr>
-            <th colspan="3"><h2>Minoren</h2></th>
+            <th colspan="3">Minoren</th>
         </tr>
         <tr>
             <td>2021</td>
@@ -72,7 +73,7 @@
         <!-- Stages -->
         
         <tr>
-            <th colspan="3"><h2>Stages</h2></th>
+            <th colspan="3">Stages</th>
         </tr>
         <tr>
             <td>2020</td>
@@ -98,7 +99,7 @@
         <!-- Werkervaring -->
         
         <tr>
-            <th colspan="3"><h2>Werkervaring</h2></th>
+            <th colspan="3">Werkervaring</th>
         </tr>
         <tr>
             <td>2019-2020</td>
@@ -125,7 +126,7 @@
         <!-- Todo: sorteren -->
         
         <tr>
-            <th colspan="3"><h2>Vaardigheden</h2></th>
+            <th colspan="3">Vaardigheden</th>
         </tr>
         <tr><td colspan="3">GIT</td></tr>
         <tr><td colspan="3">Scrum</td></tr>
@@ -148,7 +149,7 @@
         <!-- Talen -->
         
         <tr>
-            <th colspan="3"><h2>Talen</h2></th>
+            <th colspan="3">Talen</th>
         </tr>
         <tr>
             <td>Nederlands</td>
@@ -161,18 +162,18 @@
 
          <!-- Hobby’s -->
         
-         <tr>
-            <th colspan="3"><h2>Hobby’s</h2></th>
+        <tr>
+            <th colspan="3">Hobby’s</th>
         </tr>
-        <tr><td>Gamen</td></tr>
-        <tr><td>Computers</td></tr>
-        <tr><td>Lezen</td></tr>
-        <tr><td>Geschiedenis</td></tr>
-        <tr><td>Afspreken met vrienden</td></tr>
-        <tr><td>Uitgaan</td></tr>
-        <tr><td>Zeilen</td></tr>
-        <tr><td>Skateboarden</td></tr>
-        <tr><td>Klimmen</td></tr>
+        <tr><td colspan="3">Gamen</td></tr>
+        <tr><td colspan="3">Computers</td></tr>
+        <tr><td colspan="3">Lezen</td></tr>
+        <tr><td colspan="3">Geschiedenis</td></tr>
+        <tr><td colspan="3">Afspreken met vrienden</td></tr>
+        <tr><td colspan="3">Uitgaan</td></tr>
+        <tr><td colspan="3">Zeilen</td></tr>
+        <tr><td colspan="3">Skateboarden</td></tr>
+        <tr><td colspan="3">Klimmen</td></tr>
     </table>    
 </main>
 
@@ -203,7 +204,7 @@
         padding: 1rem 0;
     }
 
-    .cv-page>table th>h2{
+    .cv-page>table th{
         font-size: 1rem;
     }
 
