@@ -35,22 +35,22 @@ Route::add('/shop', function () {
     include 'private/classes/Wrapper.php';
 });
 
-Route::add('/test', function () {
-    $title = "test title";
-    $description = "test description";
+// Route::add('/test', function () {
+//     $title = "test title";
+//     $description = "test description";
 
-    $main = phpInclude('private/pages/Test.php');
-    include 'private/classes/Wrapper.php';
-});
+//     $main = phpInclude('private/pages/Test.php');
+//     include 'private/classes/Wrapper.php';
+// });
 
-Route::add('/posttest', function() {
-    $raw = trim(file_get_contents("php://input"));
-    $json = json_decode($raw, true);
+// Route::add('/posttest', function() {
+//     $raw = trim(file_get_contents("php://input"));
+//     $json = json_decode($raw, true);
 
-    $array = array("username final"=>$json["username"]);
-    $myJSON = json_encode($array);
+//     $array = array("username final"=>$json["username"]);
+//     $myJSON = json_encode($array);
     
-    echo($myJSON);
-}, 'post');
+//     echo($myJSON);
+// }, 'post');
 
 Route::run('/');

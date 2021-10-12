@@ -1,8 +1,18 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "website";
+
+include_once 'private/classes/Domain.php';
+
+if(isOnline()){
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "DB4145287";
+}else{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "DB4145287";
+}
 
 // Create connection
 $conn = @ new mysqli($servername, $username, $password, $dbname);

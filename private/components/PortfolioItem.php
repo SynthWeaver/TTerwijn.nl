@@ -44,7 +44,6 @@
     .portfolio-item-component>h2{
         grid-column-start: 1;
         grid-column-end: 3;
-        margin-bottom: 1rem;
     }
 
     .portfolio-item-component>a>img{

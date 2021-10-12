@@ -24,11 +24,15 @@ main>*{
     margin-bottom: 0.5rem;
 }
 
-section{
+main>h1{
+    text-align: center;
+}
+
+main>section{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-h1{
-    text-align: center;
+main>section>h2{
+    margin-bottom: 1rem;
 }
