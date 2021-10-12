@@ -11,7 +11,7 @@
     </a>
     <p>
         <?php
-            echo $job->getDescription() . "&nbsp;";
+            echo $job->getDescription() . "<br><br>";
         
             if($job->getGithubLink()){
                 echo sprintf('<a href="%s" title="%s" target="_blank" 
@@ -44,6 +44,10 @@
     .portfolio-item-component>h2{
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+
+    .portfolio-item-component>a{
+        margin: auto 0;
     }
 
     .portfolio-item-component>a>img{

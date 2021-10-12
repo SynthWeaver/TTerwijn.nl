@@ -16,6 +16,7 @@ $html = "
             <meta name='description' content='$description'>
             <link rel='shortcut icon' type='image/x-icon' href='public/img/favicon.ico'/>
             <style>$css</style>
+            <link rel='canonical' href='$canonical'/>
             <meta name='monetization' content='\$ilp.uphold.com/6N2G3HpwKZMp'>
         </head>
         <body>
