@@ -1,4 +1,4 @@
-<?php include "private/classes/DB.php"; ?>
+<?php include_once "private/classes/DB.php"; ?>
 
 <main class="portfolio-page">
     <h1>Portfolio</h1> 

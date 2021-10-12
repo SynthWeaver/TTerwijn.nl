@@ -1,6 +1,7 @@
 <?php
 
-include 'private/libraries/Minifier.php';
+include_once 'private/classes/PhpInclude.php';
+include_once 'private/libraries/Minifier.php';
 
 $css = file_get_contents('public/css/style.css');
 $header = phpInclude('private/components/Header.php');

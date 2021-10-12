@@ -1,7 +1,7 @@
 <?php
 
-include 'private/libraries/Route.php';
-include 'private/classes/PhpInclude.php';
+include_once 'private/libraries/Route.php';
+include_once 'private/classes/PhpInclude.php';
 
 Route::add('/', function () {
     $title = "Homepagina van Tim Terwijn";
