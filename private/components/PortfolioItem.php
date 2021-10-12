@@ -13,6 +13,7 @@
         <?php
             echo $job->getDescription() . "<br><br>";
         
+            // Todo: Add icons instead of text
             if($job->getGithubLink()){
                 echo sprintf('<a href="%s" title="%s" target="_blank" 
                 >Github</a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
