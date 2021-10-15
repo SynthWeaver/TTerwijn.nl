@@ -15,12 +15,12 @@
         
             // Todo: Add icons instead of text
             if($job->getGithubLink()){
-                echo sprintf('<a href="%s" title="%s" target="_blank" 
+                echo sprintf('<a href="%s" title="%s" target="_blank" rel="noopener" 
                 >Github</a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
             }
 
             if($job->getDemoLink()){
-                echo sprintf('<a href="%s" title="%s" target="_blank" 
+                echo sprintf('<a href="%s" title="%s" target="_blank" rel="noopener" 
                 >Demo</a>&nbsp;', $job->getDemoLink(), $DEMO_TITLE);
             }
 

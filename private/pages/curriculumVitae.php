@@ -1,6 +1,5 @@
 <main class="cv-page">
     <h1>Curriculum vitae</h1> 
-    <!-- Todo: Make page responsive -->
     <!-- Todo: Add css print -->
     <table>
         <tr>
@@ -20,10 +19,10 @@
             <td>07-09-1995</td>
         </tr>
         <tr>
-            <td colspan="2"><a href="https://linkedin.com/in/tim-t-37611ab6/" title="Open mijn LinkedIn pagina in een nieuw tabblad." target="_blank" >LinkedIn</a></td>
+            <td colspan="2"><a href="https://linkedin.com/in/tim-t-37611ab6/" title="Open mijn LinkedIn pagina in een nieuw tabblad." target="_blank" rel="noopener" >LinkedIn</a></td>
         </tr>
         <tr>
-            <td colspan="2"><a href="https://github.com/TimTerwijn" title="Open mijn Github pagina in een nieuw tabblad." target="_blank" >Github</a>
+            <td colspan="2"><a href="https://github.com/TimTerwijn" title="Open mijn Github pagina in een nieuw tabblad." target="_blank" rel="noopener" >Github</a>
         </td>
         </tr>
 
