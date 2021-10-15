@@ -213,6 +213,11 @@
         padding-right: 1rem;
     }
 
+    /* Add css to header for navigation */
+    header>nav:first-child>a:nth-of-type(2){
+        background-color: #026491;
+    }
+
     /* Mobile */
     @media only screen and (max-width: 524px){       
         .cv-page{

@@ -27,5 +27,7 @@
 </script>
 
 <style>
-
+    header>nav:first-child>a:nth-of-type(1){
+        background-color: #026491;
+    }
 </style>
