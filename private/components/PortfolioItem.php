@@ -74,8 +74,8 @@
         justify-content: center;
         background-color: #026491;
         height: 37px;
-        width: 60px;
-        border-radius: 8px;
+        width: 56px;
+        border-radius: 4px;
     } 
 
     /* Mobile */
