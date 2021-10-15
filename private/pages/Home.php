@@ -1,5 +1,6 @@
 <main class="home-page">
     <h1>Home</h1> 
+    <!-- TODO: Add some images here -->
     <section>
         <h2>Wie ben ik?</h2>
         <p>
