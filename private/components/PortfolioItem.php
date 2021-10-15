@@ -14,7 +14,6 @@
             echo "<p>" . $job->getDescription() . "</p>";
 
             echo "<div>";
-                // Todo: Add icons instead of text
                 if($job->getGithubLink()){
                     echo sprintf('<a href="%s" class="image-button" title="%s" target="_blank" rel="noopener" 
                     ><img src="public/img/github-brands.png" alt="Github"></a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
@@ -77,6 +76,11 @@
         width: 56px;
         border-radius: 4px;
     } 
+
+    .portfolio-item-component>div>div>a>img{
+        height: 25px;
+        width: 25px;
+    }
 
     /* Mobile */
     @media only screen and (max-width: 700px){       
