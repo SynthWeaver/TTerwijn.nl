@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /curriculum-vitae
+Allow: /portfolio
+Disallow: /private/
+
+Sitemap: https://tterwijn.nl/sitemap.xml
