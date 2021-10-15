@@ -1,6 +1,7 @@
 <main class="home-page">
     <h1>Home</h1> 
     <!-- TODO: Add some images here -->
+    <!-- TODO: Add cache support -->
     <section>
         <h2>Wie ben ik?</h2>
         <p>

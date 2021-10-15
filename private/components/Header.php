@@ -9,8 +9,6 @@
     <nav>
         <a href="/" title="<?= $HOME_TITLE ?>">Tim Terwijn</a>
     </nav>
-
-    <!-- Todo add breadcrubs or colours to menu -->
 </header>
 
 <script>

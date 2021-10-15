@@ -9,27 +9,29 @@
     <a href="public/img/<?= $job->getImageLink() ?>" title="<?= $IMAGE_TITLE ?>" target="_blank" >
         <img src="public/img/<?= $job->getSmallImageLink() ?>" alt="Een foto van het project <?= $job->getName() ?>">
     </a>
-    <p>
+    <div>
         <?php
-            echo $job->getDescription() . "<br><br>";
-        
-            // Todo: Add icons instead of text
-            if($job->getGithubLink()){
-                echo sprintf('<a href="%s" title="%s" target="_blank" rel="noopener" 
-                >Github</a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
-            }
+            echo "<p>" . $job->getDescription() . "</p>";
 
-            if($job->getDemoLink()){
-                echo sprintf('<a href="%s" title="%s" target="_blank" rel="noopener" 
-                >Demo</a>&nbsp;', $job->getDemoLink(), $DEMO_TITLE);
-            }
+            echo "<div>";
+                // Todo: Add icons instead of text
+                if($job->getGithubLink()){
+                    echo sprintf('<a href="%s" class="image-button" title="%s" target="_blank" rel="noopener" 
+                    ><img src="public/img/github-brands.png" alt="Github"></a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
+                }
 
-            if($job->getImageLink()){
-                echo sprintf('<a href="public/img/%s" title="%s" target="_blank" 
-                >Foto</a>&nbsp;', $job->getImageLink(), $IMAGE_TITLE);
-            }
+                if($job->getDemoLink()){
+                    echo sprintf('<a href="%s" class="image-button" title="%s" target="_blank" rel="noopener" 
+                    ><img src="public/img/laptop-code-solid.png" alt="Demo"></a>&nbsp;', $job->getDemoLink(), $DEMO_TITLE);
+                }
+
+                if($job->getImageLink()){
+                    echo sprintf('<a href="public/img/%s" class="image-button" title="%s" target="_blank" 
+                    ><img src="public/img/camera-solid.png" alt="Foto"></a>&nbsp;', $job->getImageLink(), $IMAGE_TITLE);
+                }
+            echo "</div>";
         ?>
-    </p>
+    </div>
 </section>
 
 <script>
@@ -54,9 +56,27 @@
         margin: 0 auto;
     }
 
-    .portfolio-item-component>p{
+    .portfolio-item-component>div{
         padding-left: 1rem;
     }
+
+    .portfolio-item-component>div>p{
+        padding-bottom: 1rem;
+    }
+
+    .portfolio-item-component>div>div{
+        display: flex;
+    }
+
+    .portfolio-item-component>div>div>a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #026491;
+        height: 37px;
+        width: 60px;
+        border-radius: 8px;
+    } 
 
     /* Mobile */
     @media only screen and (max-width: 700px){       
