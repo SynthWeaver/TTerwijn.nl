@@ -47,10 +47,6 @@
         grid-column-end: 3;
     }
 
-    .portfolio-item-component>a{
-        margin: auto 0;
-    }
-
     .portfolio-item-component>a>img{
         max-width: 100%;
         max-height: 10rem;
@@ -60,5 +56,36 @@
 
     .portfolio-item-component>p{
         padding-left: 1rem;
+    }
+
+    /* Mobile */
+    @media only screen and (max-width: 1000px){       
+        main{
+            --main-padding: 0;
+        }
+
+        .portfolio-item-component{
+            padding: 0 1rem;
+        }
+    }
+
+    /* Mobile */
+    @media only screen and (max-width: 700px){       
+        .portfolio-item-component{
+            grid-template-columns: auto;
+        }
+
+        .portfolio-item-component>h2{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .portfolio-item-component>p{
+            padding-left: 0;
+        }
+
+        .portfolio-item-component>a>img{
+            margin-bottom: 1rem;
+        }
     }
 </style>
