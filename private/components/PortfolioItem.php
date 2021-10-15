@@ -59,17 +59,6 @@
     }
 
     /* Mobile */
-    @media only screen and (max-width: 1000px){       
-        main{
-            --main-padding: 0;
-        }
-
-        .portfolio-item-component{
-            padding: 0 1rem;
-        }
-    }
-
-    /* Mobile */
     @media only screen and (max-width: 700px){       
         .portfolio-item-component{
             grid-template-columns: auto;

@@ -217,11 +217,11 @@
     /* Mobile */
     @media only screen and (max-width: 524px){       
         .cv-page{
-            --main-padding: 0;
+            padding: 0 4px;
         }
     }
 
-    /* Mobile mini */
+    /* Mobile mini*/
     @media only screen and (max-width: 382px){
         .cv-page>table td{
             padding-right: 0;
