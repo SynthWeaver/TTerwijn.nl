@@ -91,7 +91,7 @@
     }
 
     /* mobile small */
-    @media only screen and (max-width: 368px) {        
+    @media only screen and (max-width: 300px) {        
         header>nav:first-child {
             grid-template-columns: auto auto;
             justify-self: center;

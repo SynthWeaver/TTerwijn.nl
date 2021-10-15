@@ -1,9 +1,11 @@
 <main class="cv-page">
     <h1>Curriculum vitae</h1> 
+    <!-- Todo: Make page responsive -->
+    <!-- Todo: Add css print -->
     <table>
         <tr>
             <th colspan="2">Persoonsgegevens</th>
-            <td rowspan="7"><img src="public/img/tim.jpg" alt="Een foto van Tim Terwijn op zijn zeilboot"></td>
+            <td rowspan="7"><img src="public/img/timterwijn.jpg" alt="Een foto van Tim Terwijn op zijn zeilboot"></td>
         </tr>
         <tr>
             <td>Naam</td>
@@ -182,10 +184,6 @@
 </script>
 
 <style>
-    /* .cv-page{
-
-    } */
-
     .cv-page>table{
         text-align: left;
         margin: 0 auto;
@@ -214,5 +212,19 @@
 
     .cv-page>table td{
         padding-right: 1rem;
+    }
+
+    /* Mobile */
+    @media only screen and (max-width: 524px){       
+        .cv-page{
+            --main-padding: 0;
+        }
+    }
+
+    /* Mobile mini */
+    @media only screen and (max-width: 382px){
+        .cv-page>table td{
+            padding-right: 0;
+        }
     }
 </style>
