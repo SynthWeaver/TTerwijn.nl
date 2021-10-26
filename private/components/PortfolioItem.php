@@ -1,5 +1,5 @@
 <?php 
-    $GITHUB_TITLE = "Opent deze github repository in een nieuw tabblad."; 
+    $GITHUB_TITLE = "Opent deze Github repository in een nieuw tabblad."; 
     $DEMO_TITLE = "Opent de demo van dit project in een nieuw tabblad."; 
     $IMAGE_TITLE = "Opent de foto van dit project in new tabblad voor betere weergave."; 
 ?>
@@ -25,19 +25,29 @@
             echo "<p>" . $job->getDescription() . "</p>";
 
             echo "<div>";
-                if($job->getGithubLink()){
-                    echo sprintf('<a href="%s" class="image-button" title="%s" target="_blank" rel="noopener" 
-                    ><img src="public/img/github-brands.png" alt="Github"></a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
-                }
-
                 if($job->getDemoLink()){
-                    echo sprintf('<a href="%s" class="image-button" title="%s" target="_blank" rel="noopener" 
-                    ><img src="public/img/laptop-code-solid.png" alt="Demo"></a>&nbsp;', $job->getDemoLink(), $DEMO_TITLE);
+                    echo sprintf('<a href="%s" title="%s" target="_blank" rel="noopener" 
+                    ><img src="public/img/link-solid.png" alt="Demo"></a>&nbsp;', $job->getDemoLink(), $DEMO_TITLE);
+                }else{
+                    echo sprintf('<a class="image-button-disabled" title="De demo is helaas niet beschikbaar..." 
+                    ><img src="public/img/link-solid.png" alt="Demo"></a>&nbsp;');
                 }
 
+                if($job->getGithubLink()){
+                    echo sprintf('<a href="%s" title="%s" target="_blank" rel="noopener" 
+                    ><img src="public/img/github-brands.png" alt="Github"></a>&nbsp;', $job->getGithubLink(), $GITHUB_TITLE);
+                }else{
+                    echo sprintf('<a class="image-button-disabled" title="De repository is helaas privé..." 
+                    ><img src="public/img/github-brands.png" alt="Github"></a>&nbsp;');
+                }
+
+                // Show image button if both links above are missing
                 if($job->getImageLink()){
                     echo sprintf('<a href="public/img/%s" class="image-button" title="%s" target="_blank" 
                     ><img src="public/img/camera-solid.png" alt="Foto"></a>&nbsp;', $job->getImageLink(), $IMAGE_TITLE);
+                }else{
+                    echo sprintf('<a class="image-button-disabled" title="De foto is helaas niet beschikbaar..." 
+                    ><img src="public/img/camera-solid.png" alt="Foto"></a>&nbsp;');
                 }
             echo "</div>";
         ?>
@@ -86,7 +96,12 @@
         height: 37px;
         width: 56px;
         border-radius: 4px;
-    } 
+    }
+
+    .portfolio-item-component .image-button-disabled{
+        background-color: #6e6e6e;
+        cursor: default;
+    }
 
     .portfolio-item-component>div>div>a>img{
         height: 25px;
