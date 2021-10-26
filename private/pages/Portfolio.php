@@ -2,6 +2,7 @@
 
 <main class="portfolio-page">
     <h1>Portfolio</h1> 
+    <!-- Todo: Add more backlinks in old projects -->
 
     <?php 
         //Get jobs from database 

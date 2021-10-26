@@ -6,9 +6,20 @@
 
 <section class="portfolio-item-component">
     <h2><?= $job->getName() ?></h2>
-    <a href="public/img/<?= $job->getImageLink() ?>" title="<?= $IMAGE_TITLE ?>" target="_blank" >
-        <img src="public/img/<?= $job->getSmallImageLink() ?>" alt="Een foto van het project <?= $job->getName() ?>">
-    </a>
+    
+    <?php 
+        if($job->getImageLink()){
+            echo "
+                <a href='public/img/{$job->getImageLink()}' title='$IMAGE_TITLE' target='_blank' >
+                    <img src='public/img/{$job->getSmallImageLink()}' alt='Een foto van het project {$job->getName()}'>
+                </a>
+            ";
+        }else{
+            echo "<img src='public/img/empty.png' alt='Geen foto beschikbaar'>";
+        }
+    ?>
+    
+    
     <div>
         <?php
             echo "<p>" . $job->getDescription() . "</p>";
@@ -48,7 +59,7 @@
         grid-column-end: 3;
     }
 
-    .portfolio-item-component>a>img{
+    .portfolio-item-component img{
         max-width: 100%;
         max-height: 10rem;
         display: block;
